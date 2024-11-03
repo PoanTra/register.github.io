@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.header .menu{
+    background-color: #004aad;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 3%;
+}
+img{
+    width: 200px;
+}
+.menu a:first-child{
+    margin-right: auto;
+}
+
+
+/*menu incon click is here*/
+.menu a:hover{
+    background-color: rgba(180, 178, 178, 0.377);
+}
+.menu .menu-btn{
+    display: none;
+    padding-top: 10px;
+}
+
+/*sidebar for mobile is here*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    z-index:999;
+    background-color: #004bad91;
+    backdrop-filter:blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar a{
+    height: 50px;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+}
+.sidebar a:hover{
+    background-color: rgba(180, 178, 178, 0.377);
+}
+
+
+@media(max-width: 700px){
+
+    .menu .hideOnMobile{
+        display:none;
+    }
+    .menu .menu-btn{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .header{
+        width: 375px;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "khmer os battambang";
+}
+
+
+body{
+    background-color: #fbf9eb;
+}
+
+.container{
+    background-color: #faf1de;
+    margin-top: 10%;
+    width: 375px;
+    height: auto;
+    box-shadow: 0 0 5px #000;
+    border-radius: 5%;
+}
+.contan-box{
+    padding: 8% 0;
+}
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.branch{
+    padding: 0% 5%;
+}
+button{
+    width: 100%;
+    margin: 2% 0%;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid #000;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+.branch .list{
+    text-decoration: none;
+    color: #000000;
+    padding: 0% 92px;
+    cursor: pointer;
+}
+.branch button:hover{
+    background-color: #004aad;
+    color: #fff;
+}
+.branch .list:hover{
+    background-color: #004aad;
+    color: #fff;
+}
+
+
