@@ -11,6 +11,7 @@ function hidebtn(){
     hidebtn.style.display = 'none'
 }
 
+
 var languageSelectinfo = {
     បារាំង:{
         A1:["A1-1", "A1-2", "A1-3","A1-4","A1-5" , "A1-6"],
@@ -33,6 +34,7 @@ var languageSelectinfo = {
         "Easy Steps to chinese 5":["GCP13","GCP14","GCP15"],
     }
 }
+            
 var shiftTime = {
     "ចន្ទ-សុក្រ":{
         "07h00-08h00":[],
@@ -152,11 +154,6 @@ form.addEventListener("submit" , (e) =>{
     var day = document.querySelector("#day").value
     var time = document.querySelector("#time").value
 
-
-    var token = "7919041010:AAEqjFza-NSkZ8oVuZ46xqR6fkJ8HDV-bq0";
-
-    var chat_id = "-4565877642"
-
     var my_text = ` - ឈ្មោះជាអក្សរខ្មែរ : ${text_Nkhmer} 
     %0A - ឈ្មោះជាអក្សរឡាតាំង : ${text_Nenglish}
     %0A - ភេទ : ${sex}
@@ -172,6 +169,10 @@ form.addEventListener("submit" , (e) =>{
     %0A - ជំនាញ : ${skill}
     %0A - ឆ្នាំទី : ${year}
     %0A - ទីលំនៅបច្ចុប្បន្ន : ${address}`
+
+    //var token = "7919041010:AAEqjFza-NSkZ8oVuZ46xqR6fkJ8HDV-bq0";
+    
+    var chat_id = "-4562237970"
 
     var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${my_text}`
 
@@ -201,7 +202,8 @@ const btn1 = document.getElementById('mySubmit');
 const out1 = document.getElementById('output1');
 
 function fun1(){
-    out1.innerText = `- ឈ្មោះជាអក្សរខ្មែរ : ${txt1.value} 
+    out1.innerText = `
+    - ឈ្មោះជាអក្សរខ្មែរ : ${txt1.value} 
     - ឈ្មោះជាអក្សរឡាតាំង : ${txt2.value} 
     - ភេទ : ${txt3.value}
     - ថ្ងៃខែឆ្នាំកំណើត : ${txt4.value}
